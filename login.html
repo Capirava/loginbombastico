@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #011e11;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: #38614a;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(48, 73, 49, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #011e11;
+            border-radius: 3px;
+	    background-color: #011e11;
+            color: white;
+        }
+
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #011e11; 
+            border-radius: 3px;
+            background-color: #011e11;
+            color: white;
+        }
+
+        button {
+            background-color: #31ad67;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #85e6af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Bombastico</h2>
+        <form action="processar_login.php" method="post">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
