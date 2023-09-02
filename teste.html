@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML com Imagens</title>
+    <!-- Importar a fonte DM Sans do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #011E11;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            position: relative;
+        }
+        img {
+            max-width: 100%; /* Largura máxima de 100% para ocupar o espaço disponível */
+            height: auto;
+            margin: 10px;
+            position: absolute;
+        }
+        img:first-child {
+            top: 0;
+            left: 0;
+            width: 240px;
+        }
+        img:nth-child(2) {
+            bottom: 180px;
+            right: 10px;
+            width: 600px;
+        }
+        h1 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 80px;
+            color: white;
+            text-align: left;
+            position: absolute;
+            bottom: 300px;
+            left: 50px;
+            white-space: pre-line;
+            z-index: 5;
+        }
+        /* Estilo dos botões */
+        .button {
+            background-color: #3DD980;
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 50px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            border-radius: 25px;
+            opacity: 0.5; /* Opacidade inicial */
+            transition: opacity 0.3s ease; /* Efeito de transição na opacidade */
+        }
+        .button:hover {
+            opacity: 10; /* Torna visível ao passar o mouse */
+        }
+        .button1 {
+            bottom: 200px;
+            left: 70px;
+        }
+        .button2 {
+            bottom: -350px; /* Movido para baixo */
+            left: 1000px;
+        }
+        .button3 {
+            bottom: -600px; /* Movido mais para baixo */
+            left: 500px; /* Movido para a esquerda */
+        }
+        /* Estilo do h2 */
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            bottom: 20px; /* Distância do fundo da página */
+        }
+        /* Estilo da caixa de texto */
+        .textbox {
+            background-color: #38614A;
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -250px;
+            left: 17%;
+            transform: translateX(-50%);
+        }
+        /* Estilo da imagem abaixo do botão 2 */
+        .image-below-button {
+            max-width: 20%; /* Reduzindo o tamanho da imagem */
+            height: auto;
+            position: absolute;
+            bottom: -700px; /* Movido mais para baixo */
+            left: 1300px; /* Movido mais para a esquerda */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/FJWBvH0.png" alt="Imagem 1">
+    <img src="https://i.imgur.com/oXlNU8G.png" alt="Imagem 2">
+    
+    <h1>Quem cresce natural<br>é planta</h1>
+    
+    <!-- Botão 1 -->
+    <button class="button button1">Garanta já o seu</button>
+    
+    <!-- Botão 2 -->
+    <button class="button button2">Agende a sua <br>consulta com os  <br> melhores profissionais</button>
+    
+    <!-- h2 Centralizado na Parte Inferior -->
+    <h2>|</h2>
+    <h2>v</h2>
+    
+    <!-- Caixa de Texto -->
+    <div class="textbox">Nao tenha vergonha <br>do seu shape nada <br> AESTHETIC!!</div>
+    
+    <!-- Imagem abaixo do Botão 2 -->
+    <img class="image-below-button" src="https://i.imgur.com/z5IUNrL.png" alt="Imagem Abaixo do Botão 2">
+</body>
+</html>
